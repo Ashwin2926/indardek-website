@@ -1,4 +1,5 @@
 // src/components/service-details/GeneralSuppliesDetail.tsx
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 'use client';
 

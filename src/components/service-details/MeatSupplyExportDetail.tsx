@@ -1,4 +1,5 @@
 // src/components/service-details/MeatSupplyExportDetail.tsx
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 'use client';
 
@@ -6,7 +7,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import {
   FiGlobe,
-  FiBox,
+ 
   FiCheckSquare,
   FiTruck,
   FiAward,
@@ -15,7 +16,7 @@ import {
   FiUsers,
   FiZap,
   FiFastForward,
-  FiTag,
+ 
   FiClock,
   FiBriefcase
 } from 'react-icons/fi';

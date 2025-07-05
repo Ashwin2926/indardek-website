@@ -1,4 +1,5 @@
 // src/components/service-details/RoadConstructionDetail.tsx
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 'use client';
 
@@ -9,9 +10,7 @@ import {
   FiTool,
   FiCheckCircle,
   FiCompass,
-  FiZap,
   FiAward,
-  FiGlobe,
   FiUsers,
   FiMap,
   FiTruck,

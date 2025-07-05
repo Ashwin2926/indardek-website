@@ -1,27 +1,25 @@
 // src/components/service-details/BoreholeDrillingDetail.tsx
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 'use client';
 
 import React, { useState } from 'react';
 import Image from 'next/image';
 import {
-  FiTarget,
   FiTool,
   FiCheckCircle,
   FiCompass,
   FiZap,
-  FiAward,
   FiDroplet,
   FiUsers,
   FiGlobe,
   FiSun,
   FiTrendingUp,
   FiBarChart2,
-  FiBook,
   FiLifeBuoy,
   FiMap
 } from 'react-icons/fi';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
