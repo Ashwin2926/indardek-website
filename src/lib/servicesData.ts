@@ -4,7 +4,7 @@ export interface Service {
   id: string
   name: string
   shortDescription: string
-  longDescription: string[]
+  longDescription: string[] // Added this line to define the property
   imageUrl: string
 }
 
@@ -13,7 +13,7 @@ export const servicesData: Service[] = [
     id: 'general-supplies',
     name: 'General Supplies',
     shortDescription:
-      'Providing a wide range of essential supplies for offices, construction, and households.',
+      'We offer a comprehensive range of general supplies, ensuring quality and timely delivery for various needs, from office essentials to construction materials and household consumables.',
     longDescription: [
       'We offer a comprehensive range of general supplies, ensuring quality and timely delivery for various needs. Our offerings include:',
       '- Office equipment and stationery: From pens and paper to printers and furniture, we equip your workspace.',
@@ -23,44 +23,45 @@ export const servicesData: Service[] = [
       '- Household and institutional consumables: Daily necessities for homes and large institutions.',
     ],
     imageUrl:
-      '/assets/flighthero2.webp',
+      '/assets/general.jpg', // Distinct placeholder
   },
   {
     id: 'borehole-drilling',
     name: 'Borehole Drilling',
-    shortDescription: 'Expert services in water solutions, from surveys to installation and maintenance.',
+    shortDescription: 'Indardek Limited specializes in complete borehole drilling solutions, ensuring access to clean and reliable water sources for various applications.',
     longDescription: [
-      'Indardek Limited specializes in providing complete borehole drilling solutions, ensuring access to clean and reliable water sources.',
-      'Our services include:',
-      '- Hydrogeological surveys: Professional assessment to identify optimal drilling locations.',
-      '- Borehole siting and drilling: Precision drilling using advanced equipment.',
-      '- Pump installation and maintenance: Installation of efficient pumping systems and ongoing maintenance.',
-      '- Water testing and treatment: Ensuring water quality meets health standards through testing and treatment.',
-      '- Borehole rehabilitation: Restoration of existing boreholes to improve functionality and water yield.',
+      'Indardek Limited specializes in complete borehole drilling solutions, ensuring access to clean and reliable water sources for various applications.',
+      'Our comprehensive services include:',
+      '- Hydrogeological surveys: Expert assessment to identify optimal drilling locations.',
+      '- Borehole drilling and construction: Utilizing advanced techniques for efficient and sustainable boreholes.',
+      '- Test pumping and water quality analysis: Ensuring yield and potability of water sources.',
+      '- Pump installation and reticulation systems: Setting up efficient water distribution systems.',
+      '- Borehole rehabilitation and maintenance: Extending the lifespan and efficiency of existing boreholes.',
     ],
     imageUrl:
-      '/assets/flighthero2.webp',
+      '/assets/borehole.jpg', // Distinct placeholder
   },
   {
     id: 'road-construction',
     name: 'Road Construction',
-    shortDescription: 'Building and maintaining robust road networks for sustainable development.',
+    shortDescription: 'Indardek Limited delivers high-quality road construction services, from design and excavation to paving and maintenance, ensuring durable and safe infrastructure.',
     longDescription: [
-      'We are experts in road construction, delivering durable and well-engineered infrastructure projects.',
-      'Our capabilities cover:',
-      '- Earthworks and grading: Preparation of the ground for road construction.',
-      '- Paving and surfacing (bitumen, murram): Application of high-quality paving materials.',
-      '- Drainage and culvert installation: Ensuring proper water management to prevent road damage.',
+      'Indardek Limited delivers high-quality road construction services, from design and excavation to paving and maintenance, ensuring durable and safe infrastructure.',
+      'Our services encompass:',
+      '- Road design and planning: Comprehensive planning for efficient and safe road networks.',
+      '- Earthworks and excavation: Preparing the ground for stable road foundations.',
+      '- Pavement and surfacing: Application of durable and high-quality road surfaces.',
+      '- Drainage systems: Installation of effective drainage management to prevent road damage.',
       '- Road signage and markings: Installation of clear and compliant road signs and markings.',
       '- Road maintenance and rehabilitation: Ongoing upkeep and restoration of road networks.',
     ],
     imageUrl:
-      '/assets/flighthero2.webp',
+      '/assets/road.jpg', // Distinct placeholder
   },
   {
     id: 'meat-supply-export',
     name: 'Meat Supply and Export',
-    shortDescription: 'Sourcing, processing, and exporting high-quality meat products globally.',
+    shortDescription: 'Indardek Limited is a trusted supplier and exporter of premium quality meat products (beef, goat, lamb), ensuring ethical sourcing, hygienic processing, and cold chain delivery globally.',
     longDescription: [
       'Indardek Limited is a trusted supplier and exporter of premium quality meat products.',
       'Our services include:',
@@ -71,6 +72,6 @@ export const servicesData: Service[] = [
       '- Cold chain transportation and delivery: Maintaining optimal conditions for meat products during transit.',
     ],
     imageUrl:
-      '/assets/flighthero2.webp',
+      '/assets/meat.jpg', // Distinct placeholder
   },
-]
+];

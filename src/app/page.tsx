@@ -7,21 +7,18 @@ import { VisionMissionValues } from '@/components/Vission';
 import { WhyUsPage } from '@/components/WhyUs';
 import { ContactUs } from '@/components/ContactUs';
 import { AboutUs } from '@/components/AboutUs';
+import { FAQ } from '@/components/FAQ';
 
 
 
 export default function HomePage() {
   return (
     <main className="space-y-16">
-      {/* Hero Section */}
       <Hero />
-
-      {/* Company Overview Section */}
       <section id="about-us" className="container mx-auto px-4 py-16">
         <AboutUs />
       </section>
 
-      {/* Core Services Section */}
       <section id="services" className="container mx-auto px-4 py-16 bg-gray-50 rounded-lg shadow-lg">
         <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">Our Core Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -47,6 +44,7 @@ export default function HomePage() {
       <section id="contact-us" className="container mx-auto px-4 py-16">
         <ContactUs />
       </section>
+      <FAQ/>
     </main>
   );
 }

@@ -1,24 +1,29 @@
 // components/AboutUs.tsx
 import React from 'react';
+import Image from 'next/image';
 
 export function AboutUs() {
   return (
-    <section className="bg-white p-8 md:p-12 rounded-xl shadow-2xl border border-gray-100 flex flex-col md:flex-row items-center justify-between gap-10">
+    <section className="bg-white p-8 md:p-10 rounded-lg border border-blue-100 flex flex-col md:flex-row items-center justify-between gap-8"> {/* Reduced padding, smaller rounded corners, reduced gap */}
       <div className="md:w-1/2 text-center md:text-left">
-        <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Company Overview</h2>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6">
-          Indardek Limited is a fully registered and reputable Kenyan company specializing in general supplies, borehole drilling, and road construction.
+        <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-5 leading-tight">Company Overview: Indardek Limited</h2> {/* Slightly smaller title, reduced margin */}
+        <p className="text-base text-gray-700 leading-relaxed mb-5"> {/* Slightly smaller text */}
+          Indardek Limited is a fully registered and reputable Kenyan company specializing in <strong className="text-blue-600">general supplies, borehole drilling, and road construction</strong>. We are committed to delivering excellence in every project.
         </p>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          With a strong foundation built on integrity, efficiency, and client satisfaction, we provide high-quality services that meet the dynamic needs of both public and private sector clients.
+        <p className="text-base text-gray-700 leading-relaxed">
+          With a strong foundation built on <strong className="text-blue-600">integrity, efficiency, and client satisfaction</strong>, we provide high-quality services that meet the dynamic needs of both public and private sector clients across the region.
         </p>
       </div>
-      <div className="md:w-1/2 flex justify-center items-center">
-        <img
-          src="https://placehold.co/600x400/E0F2F7/000000?text=Company+Overview+Image"
-          alt="Company Overview"
-          className="rounded-lg shadow-lg max-w-full h-auto"
+      <div className="md:w-1/2 flex justify-center items-center relative min-h-[280px] md:min-h-[350px] rounded-lg overflow-hidden"> {/* Adjusted min-heights, smaller rounded corners */}
+        <Image
+          src="/images/company-overview.jpg" // Placeholder for an actual company overview image
+          alt="Indardek Limited Company Overview - Construction site with team"
+          layout="fill"
+          objectFit="cover"
+          className="shadow-sm" // Very subtle shadow
         />
+        {/* Very subtle overlay to ensure sleekness and slightly blend with content */}
+        <div className="absolute inset-0 bg-blue-900 opacity-5 rounded-lg"></div>
       </div>
     </section>
   );
